@@ -1,6 +1,0 @@
-Rahul, Python
-Priya, Java
-Arjun, C++
-Sneha, Data Science
-Kiran, React
-Rahul, MERN

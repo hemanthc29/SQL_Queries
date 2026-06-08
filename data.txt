@@ -1,4 +1,0 @@
-A platform which is used for sharing the data in public internet is known as web page
-Group of webpages is called as website & a person who develops websites are web developers
-
-
