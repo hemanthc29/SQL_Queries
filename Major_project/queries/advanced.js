@@ -4,7 +4,7 @@ console.log("\n==================================================");
 console.log("RUNNING ADVANCED AGGREGATION QUERIES (TASKS 111 - 119)");
 console.log("==================================================");
 
-// Task 111: Find the restaurant generating the highest revenue.
+//t111
 console.log("\n[Task 111] Find the restaurant generating the highest revenue:");
 db.orders.aggregate([
   { $group: { _id: "$restaurant_id", total_revenue: { $sum: "$total_amount" } } },
@@ -27,7 +27,7 @@ db.orders.aggregate([
   }
 ]).forEach(printjson);
 
-// Task 112: Find the customer who placed the maximum number of orders.
+//t112
 console.log("\n[Task 112] Find the customer who placed the maximum number of orders:");
 db.orders.aggregate([
   { $group: { _id: "$customer_id", order_count: { $sum: 1 } } },
@@ -50,7 +50,7 @@ db.orders.aggregate([
   }
 ]).forEach(printjson);
 
-// Task 113: Find the most popular payment method.
+//t113
 console.log("\n[Task 113] Find the most popular payment method:");
 db.payments.aggregate([
   { $group: { _id: "$payment_method", transaction_count: { $sum: 1 } } },
@@ -64,7 +64,7 @@ db.payments.aggregate([
   }
 ]).forEach(printjson);
 
-// Task 114: Find the city with the maximum customers.
+//t114
 console.log("\n[Task 114] Find the city with the maximum customers:");
 db.customers.aggregate([
   { $group: { _id: "$city", customer_count: { $sum: 1 } } },
@@ -78,7 +78,7 @@ db.customers.aggregate([
   }
 ]).forEach(printjson);
 
-// Task 115: Find the city having the highest number of restaurants.
+//t115
 console.log("\n[Task 115] Find the city having the highest number of restaurants:");
 db.restaurants.aggregate([
   { $group: { _id: "$city", restaurant_count: { $sum: 1 } } },
@@ -92,7 +92,7 @@ db.restaurants.aggregate([
   }
 ]).forEach(printjson);
 
-// Task 116: Find the top 3 restaurants based on average ratings.
+//t116
 console.log("\n[Task 116] Find the top 3 restaurants based on average ratings (calculated from reviews):");
 db.reviews.aggregate([
   { $group: { _id: "$restaurant_id", average_rating: { $avg: "$rating" } } },
@@ -115,7 +115,7 @@ db.reviews.aggregate([
   }
 ]).forEach(printjson);
 
-// Task 117: Find the top 5 customers based on order count.
+//t117
 console.log("\n[Task 117] Find the top 5 customers based on order count:");
 db.orders.aggregate([
   { $group: { _id: "$customer_id", order_count: { $sum: 1 } } },
@@ -138,7 +138,7 @@ db.orders.aggregate([
   }
 ]).forEach(printjson);
 
-// Task 118: Find the percentage of delivered orders.
+//t118
 console.log("\n[Task 118] Find the percentage of delivered orders:");
 db.orders.aggregate([
   { $group: {
@@ -160,7 +160,7 @@ db.orders.aggregate([
   }
 ]).forEach(printjson);
 
-// Task 119: Find the average order amount city-wise.
+//t119
 console.log("\n[Task 119] Find the average order amount city-wise:");
 db.orders.aggregate([
   { $lookup: {
