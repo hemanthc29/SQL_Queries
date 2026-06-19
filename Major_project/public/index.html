@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Food Delivery System - MongoDB Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="main-header">
+      <div class="header-logo">
+        <span class="logo-icon">🍔</span>
+        <h1>FoodExpress <span class="logo-accent">MongoDB Dashboard</span></h1>
+      </div>
+      <div class="header-actions">
+        <div class="status-indicator">
+          <span class="status-dot disconnected" id="status-dot"></span>
+          <span class="status-text" id="status-text">Connecting to local MongoDB...</span>
+        </div>
+        <button class="btn btn-seed" id="btn-seed" title="Seed sample data to MongoDB">
+          <span class="btn-icon">⚡</span> Seed Database
+        </button>
+      </div>
+    </header>
+
+    <div class="main-layout">
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <div class="sidebar-section-title">Task Categories</div>
+        <nav class="sidebar-nav" id="sidebar-nav">
+          <!-- Populated dynamically via JS -->
+        </nav>
+      </aside>
+
+      <!-- Main Panel -->
+      <main class="main-content">
+        <!-- Overview Grid (Shown when no task is active) -->
+        <div class="dashboard-overview" id="overview-panel">
+          <div class="welcome-card">
+            <h2>Welcome to your MongoDB Major Project Workspace!</h2>
+            <p>This interactive web dashboard allows you to seed the <code>food_delivery_db</code> database and test all 119 queries dynamically. Select a task from the sidebar categories to inspect and run queries.</p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-icon">👥</span>
+              <div class="stat-details">
+                <h3>Customers</h3>
+                <p>Tasks 1 - 15</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">🏬</span>
+              <div class="stat-details">
+                <h3>Restaurants</h3>
+                <p>Tasks 16 - 30</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">🍕</span>
+              <div class="stat-details">
+                <h3>Menu Items</h3>
+                <p>Tasks 31 - 45</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">📦</span>
+              <div class="stat-details">
+                <h3>Orders</h3>
+                <p>Tasks 46 - 65</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">💳</span>
+              <div class="stat-details">
+                <h3>Payments</h3>
+                <p>Tasks 66 - 85</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">🛵</span>
+              <div class="stat-details">
+                <h3>Delivery Agents</h3>
+                <p>Tasks 86 - 95</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">⭐</span>
+              <div class="stat-details">
+                <h3>Reviews</h3>
+                <p>Tasks 96 - 110</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">📈</span>
+              <div class="stat-details">
+                <h3>Advanced Analytics</h3>
+                <p>Tasks 111 - 119</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task Run Panel (Shown when a task is selected) -->
+        <div class="task-run-panel hidden" id="task-panel">
+          <div class="panel-header">
+            <div class="task-badge" id="task-badge">Task t0</div>
+            <h2 id="task-title">Task Title</h2>
+          </div>
+
+          <div class="query-section">
+            <h3>MongoDB Shell Syntax</h3>
+            <div class="code-container">
+              <pre><code id="query-code">db.collection.find()</code></pre>
+              <button class="btn-copy" id="btn-copy" title="Copy code">📋</button>
+            </div>
+            <button class="btn btn-primary" id="btn-run">
+              <span class="btn-spinner hidden" id="btn-spinner"></span>
+              <span class="btn-text">Execute Query</span>
+            </button>
+          </div>
+
+          <div class="results-section">
+            <div class="results-header">
+              <h3>Query Results</h3>
+              <span class="badge badge-success hidden" id="result-success-badge">Success</span>
+            </div>
+            <div class="result-container">
+              <pre><code id="result-code">// Output will appear here after execution...</code></pre>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast hidden" id="toast">Database successfully seeded!</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
