@@ -1,0 +1,1911 @@
+
+==================================================
+Database Switched to: food_delivery_db
+==================================================
+Seeding sample data for food_delivery_db...
+Seeded 'customers' collection.
+Seeded 'restaurants' collection.
+Seeded 'menu' collection.
+Seeded 'orders' collection.
+Seeded 'payments' collection.
+Seeded 'delivery_agents' collection.
+Seeded 'reviews' collection.
+Seeding complete!
+
+
+==================================================
+RUNNING CUSTOMERS QUERIES (TASKS 1 - 15)
+==================================================
+
+[Task 1] Display all customers:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc114'),
+  customer_id: 1,
+  name: 'Saran',
+  email: 'saran@gmail.com',
+  phone: '9876543210',
+  city: 'Bangalore'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc115'),
+  customer_id: 2,
+  name: 'Priya',
+  email: 'priya@gmail.com',
+  phone: '9876543211',
+  city: 'Hyderabad'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc116'),
+  customer_id: 3,
+  name: 'Rahul',
+  email: 'rahul@gmail.com',
+  phone: '9876543212',
+  city: 'Chennai'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc117'),
+  customer_id: 4,
+  name: 'Deepa',
+  email: 'deepa@gmail.com',
+  phone: '9876543213',
+  city: 'Pune'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc118'),
+  customer_id: 5,
+  name: 'Anjali',
+  email: 'anjali@gmail.com',
+  phone: '9876543214',
+  city: 'Bangalore'
+}
+
+[Task 2] Display customers from Bangalore:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc114'),
+  customer_id: 1,
+  name: 'Saran',
+  email: 'saran@gmail.com',
+  phone: '9876543210',
+  city: 'Bangalore'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc118'),
+  customer_id: 5,
+  name: 'Anjali',
+  email: 'anjali@gmail.com',
+  phone: '9876543214',
+  city: 'Bangalore'
+}
+
+[Task 3] Display customers not belonging to Hyderabad:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc114'),
+  customer_id: 1,
+  name: 'Saran',
+  email: 'saran@gmail.com',
+  phone: '9876543210',
+  city: 'Bangalore'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc116'),
+  customer_id: 3,
+  name: 'Rahul',
+  email: 'rahul@gmail.com',
+  phone: '9876543212',
+  city: 'Chennai'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc117'),
+  customer_id: 4,
+  name: 'Deepa',
+  email: 'deepa@gmail.com',
+  phone: '9876543213',
+  city: 'Pune'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc118'),
+  customer_id: 5,
+  name: 'Anjali',
+  email: 'anjali@gmail.com',
+  phone: '9876543214',
+  city: 'Bangalore'
+}
+
+[Task 4] Display customers whose names start with 'S':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc114'),
+  customer_id: 1,
+  name: 'Saran',
+  email: 'saran@gmail.com',
+  phone: '9876543210',
+  city: 'Bangalore'
+}
+
+[Task 5] Display customers whose names end with 'a':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc115'),
+  customer_id: 2,
+  name: 'Priya',
+  email: 'priya@gmail.com',
+  phone: '9876543211',
+  city: 'Hyderabad'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc117'),
+  customer_id: 4,
+  name: 'Deepa',
+  email: 'deepa@gmail.com',
+  phone: '9876543213',
+  city: 'Pune'
+}
+
+[Task 6] Display customers whose names contain 'ar':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc114'),
+  customer_id: 1,
+  name: 'Saran',
+  email: 'saran@gmail.com',
+  phone: '9876543210',
+  city: 'Bangalore'
+}
+
+[Task 7] Display customers from Bangalore or Chennai:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc114'),
+  customer_id: 1,
+  name: 'Saran',
+  email: 'saran@gmail.com',
+  phone: '9876543210',
+  city: 'Bangalore'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc116'),
+  customer_id: 3,
+  name: 'Rahul',
+  email: 'rahul@gmail.com',
+  phone: '9876543212',
+  city: 'Chennai'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc118'),
+  customer_id: 5,
+  name: 'Anjali',
+  email: 'anjali@gmail.com',
+  phone: '9876543214',
+  city: 'Bangalore'
+}
+
+[Task 8] Display customers from Bangalore and whose name starts with 'A':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc118'),
+  customer_id: 5,
+  name: 'Anjali',
+  email: 'anjali@gmail.com',
+  phone: '9876543214',
+  city: 'Bangalore'
+}
+
+[Task 9] Display customers whose city is in Bangalore, Hyderabad, or Pune:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc114'),
+  customer_id: 1,
+  name: 'Saran',
+  email: 'saran@gmail.com',
+  phone: '9876543210',
+  city: 'Bangalore'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc115'),
+  customer_id: 2,
+  name: 'Priya',
+  email: 'priya@gmail.com',
+  phone: '9876543211',
+  city: 'Hyderabad'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc117'),
+  customer_id: 4,
+  name: 'Deepa',
+  email: 'deepa@gmail.com',
+  phone: '9876543213',
+  city: 'Pune'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc118'),
+  customer_id: 5,
+  name: 'Anjali',
+  email: 'anjali@gmail.com',
+  phone: '9876543214',
+  city: 'Bangalore'
+}
+
+[Task 10] Display customers sorted by name (ascending):
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc118'),
+  customer_id: 5,
+  name: 'Anjali',
+  email: 'anjali@gmail.com',
+  phone: '9876543214',
+  city: 'Bangalore'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc117'),
+  customer_id: 4,
+  name: 'Deepa',
+  email: 'deepa@gmail.com',
+  phone: '9876543213',
+  city: 'Pune'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc115'),
+  customer_id: 2,
+  name: 'Priya',
+  email: 'priya@gmail.com',
+  phone: '9876543211',
+  city: 'Hyderabad'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc116'),
+  customer_id: 3,
+  name: 'Rahul',
+  email: 'rahul@gmail.com',
+  phone: '9876543212',
+  city: 'Chennai'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc114'),
+  customer_id: 1,
+  name: 'Saran',
+  email: 'saran@gmail.com',
+  phone: '9876543210',
+  city: 'Bangalore'
+}
+
+[Task 11] Count the total number of customers:
+Total Customers: 5
+
+[Task 12] Find the number of customers in each city:
+{
+  _id: 'Pune',
+  customer_count: 1
+}
+{
+  _id: 'Chennai',
+  customer_count: 1
+}
+{
+  _id: 'Bangalore',
+  customer_count: 2
+}
+{
+  _id: 'Hyderabad',
+  customer_count: 1
+}
+
+[Task 13] Find the city having the maximum number of customers:
+{
+  _id: 'Bangalore',
+  customer_count: 2
+}
+
+[Task 14] Display cities having more than one customer:
+{
+  _id: 'Bangalore',
+  customer_count: 2
+}
+
+[Task 15] Sort cities by customer count (ascending):
+{
+  _id: 'Chennai',
+  customer_count: 1
+}
+{
+  _id: 'Hyderabad',
+  customer_count: 1
+}
+{
+  _id: 'Pune',
+  customer_count: 1
+}
+{
+  _id: 'Bangalore',
+  customer_count: 2
+}
+
+==================================================
+RUNNING RESTAURANTS QUERIES (TASKS 16 - 30)
+==================================================
+
+[Task 16] Display all restaurants:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc119'),
+  restaurant_id: 101,
+  restaurant_name: 'Pizza Hut',
+  city: 'Bangalore',
+  rating: 4.5
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11a'),
+  restaurant_id: 102,
+  restaurant_name: 'Dominos',
+  city: 'Hyderabad',
+  rating: 4.3
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11b'),
+  restaurant_id: 103,
+  restaurant_name: 'Burger King',
+  city: 'Chennai',
+  rating: 4.4
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11c'),
+  restaurant_id: 104,
+  restaurant_name: 'KFC',
+  city: 'Pune',
+  rating: 4.2
+}
+
+[Task 17] Display restaurants located in Bangalore:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc119'),
+  restaurant_id: 101,
+  restaurant_name: 'Pizza Hut',
+  city: 'Bangalore',
+  rating: 4.5
+}
+
+[Task 18] Display restaurants having rating greater than 4.3:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc119'),
+  restaurant_id: 101,
+  restaurant_name: 'Pizza Hut',
+  city: 'Bangalore',
+  rating: 4.5
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11b'),
+  restaurant_id: 103,
+  restaurant_name: 'Burger King',
+  city: 'Chennai',
+  rating: 4.4
+}
+
+[Task 19] Display restaurants having rating between 4.2 and 4.5:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc119'),
+  restaurant_id: 101,
+  restaurant_name: 'Pizza Hut',
+  city: 'Bangalore',
+  rating: 4.5
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11a'),
+  restaurant_id: 102,
+  restaurant_name: 'Dominos',
+  city: 'Hyderabad',
+  rating: 4.3
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11b'),
+  restaurant_id: 103,
+  restaurant_name: 'Burger King',
+  city: 'Chennai',
+  rating: 4.4
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11c'),
+  restaurant_id: 104,
+  restaurant_name: 'KFC',
+  city: 'Pune',
+  rating: 4.2
+}
+
+[Task 20] Display restaurants whose names start with 'P':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc119'),
+  restaurant_id: 101,
+  restaurant_name: 'Pizza Hut',
+  city: 'Bangalore',
+  rating: 4.5
+}
+
+[Task 21] Display restaurants whose names contain 'King':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11b'),
+  restaurant_id: 103,
+  restaurant_name: 'Burger King',
+  city: 'Chennai',
+  rating: 4.4
+}
+
+[Task 22] Display restaurants located in Chennai or Hyderabad:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11a'),
+  restaurant_id: 102,
+  restaurant_name: 'Dominos',
+  city: 'Hyderabad',
+  rating: 4.3
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11b'),
+  restaurant_id: 103,
+  restaurant_name: 'Burger King',
+  city: 'Chennai',
+  rating: 4.4
+}
+
+[Task 23] Display restaurants not located in Pune:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc119'),
+  restaurant_id: 101,
+  restaurant_name: 'Pizza Hut',
+  city: 'Bangalore',
+  rating: 4.5
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11a'),
+  restaurant_id: 102,
+  restaurant_name: 'Dominos',
+  city: 'Hyderabad',
+  rating: 4.3
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11b'),
+  restaurant_id: 103,
+  restaurant_name: 'Burger King',
+  city: 'Chennai',
+  rating: 4.4
+}
+
+[Task 24] Display restaurants sorted by rating in descending order:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc119'),
+  restaurant_id: 101,
+  restaurant_name: 'Pizza Hut',
+  city: 'Bangalore',
+  rating: 4.5
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11b'),
+  restaurant_id: 103,
+  restaurant_name: 'Burger King',
+  city: 'Chennai',
+  rating: 4.4
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11a'),
+  restaurant_id: 102,
+  restaurant_name: 'Dominos',
+  city: 'Hyderabad',
+  rating: 4.3
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11c'),
+  restaurant_id: 104,
+  restaurant_name: 'KFC',
+  city: 'Pune',
+  rating: 4.2
+}
+
+[Task 25] Display the top 3 restaurants based on rating:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc119'),
+  restaurant_id: 101,
+  restaurant_name: 'Pizza Hut',
+  city: 'Bangalore',
+  rating: 4.5
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11b'),
+  restaurant_id: 103,
+  restaurant_name: 'Burger King',
+  city: 'Chennai',
+  rating: 4.4
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11a'),
+  restaurant_id: 102,
+  restaurant_name: 'Dominos',
+  city: 'Hyderabad',
+  rating: 4.3
+}
+
+[Task 26] Find the average restaurant rating:
+{
+  _id: null,
+  average_rating: 4.35
+}
+
+[Task 27] Find the highest rating:
+{
+  _id: null,
+  highest_rating: 4.5
+}
+
+[Task 28] Find the lowest rating:
+{
+  _id: null,
+  lowest_rating: 4.2
+}
+
+[Task 29] Count the number of restaurants in each city:
+{
+  _id: 'Chennai',
+  restaurant_count: 1
+}
+{
+  _id: 'Bangalore',
+  restaurant_count: 1
+}
+{
+  _id: 'Hyderabad',
+  restaurant_count: 1
+}
+{
+  _id: 'Pune',
+  restaurant_count: 1
+}
+
+[Task 30] Display cities having more than one restaurant:
+
+==================================================
+RUNNING MENU QUERIES (TASKS 31 - 45)
+==================================================
+
+[Task 31] Display all menu items:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11d'),
+  item_id: 1,
+  restaurant_id: 101,
+  item_name: 'Veg Pizza',
+  price: 250
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11e'),
+  item_id: 2,
+  restaurant_id: 101,
+  item_name: 'Chicken Pizza',
+  price: 350
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11f'),
+  item_id: 3,
+  restaurant_id: 102,
+  item_name: 'Cheese Burst Pizza',
+  price: 300
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc120'),
+  item_id: 4,
+  restaurant_id: 103,
+  item_name: 'Veg Burger',
+  price: 180
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc121'),
+  item_id: 5,
+  restaurant_id: 104,
+  item_name: 'Chicken Bucket',
+  price: 550
+}
+
+[Task 32] Display menu items costing more than 250:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11e'),
+  item_id: 2,
+  restaurant_id: 101,
+  item_name: 'Chicken Pizza',
+  price: 350
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11f'),
+  item_id: 3,
+  restaurant_id: 102,
+  item_name: 'Cheese Burst Pizza',
+  price: 300
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc121'),
+  item_id: 5,
+  restaurant_id: 104,
+  item_name: 'Chicken Bucket',
+  price: 550
+}
+
+[Task 33] Display menu items costing between 200 and 400:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11d'),
+  item_id: 1,
+  restaurant_id: 101,
+  item_name: 'Veg Pizza',
+  price: 250
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11e'),
+  item_id: 2,
+  restaurant_id: 101,
+  item_name: 'Chicken Pizza',
+  price: 350
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11f'),
+  item_id: 3,
+  restaurant_id: 102,
+  item_name: 'Cheese Burst Pizza',
+  price: 300
+}
+
+[Task 34] Display menu items belonging to restaurant ID 101:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11d'),
+  item_id: 1,
+  restaurant_id: 101,
+  item_name: 'Veg Pizza',
+  price: 250
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11e'),
+  item_id: 2,
+  restaurant_id: 101,
+  item_name: 'Chicken Pizza',
+  price: 350
+}
+
+[Task 35] Display menu items whose names start with 'C':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11e'),
+  item_id: 2,
+  restaurant_id: 101,
+  item_name: 'Chicken Pizza',
+  price: 350
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11f'),
+  item_id: 3,
+  restaurant_id: 102,
+  item_name: 'Cheese Burst Pizza',
+  price: 300
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc121'),
+  item_id: 5,
+  restaurant_id: 104,
+  item_name: 'Chicken Bucket',
+  price: 550
+}
+
+[Task 36] Display menu items whose names contain 'Pizza':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11d'),
+  item_id: 1,
+  restaurant_id: 101,
+  item_name: 'Veg Pizza',
+  price: 250
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11e'),
+  item_id: 2,
+  restaurant_id: 101,
+  item_name: 'Chicken Pizza',
+  price: 350
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11f'),
+  item_id: 3,
+  restaurant_id: 102,
+  item_name: 'Cheese Burst Pizza',
+  price: 300
+}
+
+[Task 37] Display menu items sorted by price in ascending order:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc120'),
+  item_id: 4,
+  restaurant_id: 103,
+  item_name: 'Veg Burger',
+  price: 180
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11d'),
+  item_id: 1,
+  restaurant_id: 101,
+  item_name: 'Veg Pizza',
+  price: 250
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11f'),
+  item_id: 3,
+  restaurant_id: 102,
+  item_name: 'Cheese Burst Pizza',
+  price: 300
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11e'),
+  item_id: 2,
+  restaurant_id: 101,
+  item_name: 'Chicken Pizza',
+  price: 350
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc121'),
+  item_id: 5,
+  restaurant_id: 104,
+  item_name: 'Chicken Bucket',
+  price: 550
+}
+
+[Task 38] Display the top 3 expensive menu items:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc121'),
+  item_id: 5,
+  restaurant_id: 104,
+  item_name: 'Chicken Bucket',
+  price: 550
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11e'),
+  item_id: 2,
+  restaurant_id: 101,
+  item_name: 'Chicken Pizza',
+  price: 350
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11f'),
+  item_id: 3,
+  restaurant_id: 102,
+  item_name: 'Cheese Burst Pizza',
+  price: 300
+}
+
+[Task 39] Display menu items whose prices are less than 300:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11d'),
+  item_id: 1,
+  restaurant_id: 101,
+  item_name: 'Veg Pizza',
+  price: 250
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc120'),
+  item_id: 4,
+  restaurant_id: 103,
+  item_name: 'Veg Burger',
+  price: 180
+}
+
+[Task 40] Display menu items whose prices are not equal to 350:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11d'),
+  item_id: 1,
+  restaurant_id: 101,
+  item_name: 'Veg Pizza',
+  price: 250
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc11f'),
+  item_id: 3,
+  restaurant_id: 102,
+  item_name: 'Cheese Burst Pizza',
+  price: 300
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc120'),
+  item_id: 4,
+  restaurant_id: 103,
+  item_name: 'Veg Burger',
+  price: 180
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc121'),
+  item_id: 5,
+  restaurant_id: 104,
+  item_name: 'Chicken Bucket',
+  price: 550
+}
+
+[Task 41] Find the average menu price:
+{
+  _id: null,
+  average_price: 326
+}
+
+[Task 42] Find the maximum menu price:
+{
+  _id: null,
+  max_price: 550
+}
+
+[Task 43] Find the minimum menu price:
+{
+  _id: null,
+  min_price: 180
+}
+
+[Task 44] Find the total price of all menu items:
+{
+  _id: null,
+  total_price: 1630
+}
+
+[Task 45] Find the number of menu items available in each restaurant:
+{
+  _id: 103,
+  menu_item_count: 1
+}
+{
+  _id: 101,
+  menu_item_count: 2
+}
+{
+  _id: 102,
+  menu_item_count: 1
+}
+{
+  _id: 104,
+  menu_item_count: 1
+}
+
+==================================================
+RUNNING ORDERS QUERIES (TASKS 46 - 65)
+==================================================
+
+[Task 46] Display all orders:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc122'),
+  order_id: 1001,
+  customer_id: 1,
+  restaurant_id: 101,
+  items: [
+    {
+      item_name: 'Veg Pizza',
+      quantity: 2,
+      price: 250
+    }
+  ],
+  total_amount: 500,
+  status: 'Delivered'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc123'),
+  order_id: 1002,
+  customer_id: 2,
+  restaurant_id: 102,
+  items: [
+    {
+      item_name: 'Cheese Burst Pizza',
+      quantity: 1,
+      price: 300
+    }
+  ],
+  total_amount: 300,
+  status: 'Pending'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc124'),
+  order_id: 1003,
+  customer_id: 3,
+  restaurant_id: 103,
+  items: [
+    {
+      item_name: 'Veg Burger',
+      quantity: 2,
+      price: 180
+    }
+  ],
+  total_amount: 360,
+  status: 'Delivered'
+}
+
+[Task 47] Display delivered orders:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc122'),
+  order_id: 1001,
+  customer_id: 1,
+  restaurant_id: 101,
+  items: [
+    {
+      item_name: 'Veg Pizza',
+      quantity: 2,
+      price: 250
+    }
+  ],
+  total_amount: 500,
+  status: 'Delivered'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc124'),
+  order_id: 1003,
+  customer_id: 3,
+  restaurant_id: 103,
+  items: [
+    {
+      item_name: 'Veg Burger',
+      quantity: 2,
+      price: 180
+    }
+  ],
+  total_amount: 360,
+  status: 'Delivered'
+}
+
+[Task 48] Display pending orders:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc123'),
+  order_id: 1002,
+  customer_id: 2,
+  restaurant_id: 102,
+  items: [
+    {
+      item_name: 'Cheese Burst Pizza',
+      quantity: 1,
+      price: 300
+    }
+  ],
+  total_amount: 300,
+  status: 'Pending'
+}
+
+[Task 49] Display orders having total amount greater than 400:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc122'),
+  order_id: 1001,
+  customer_id: 1,
+  restaurant_id: 101,
+  items: [
+    {
+      item_name: 'Veg Pizza',
+      quantity: 2,
+      price: 250
+    }
+  ],
+  total_amount: 500,
+  status: 'Delivered'
+}
+
+[Task 50] Display orders having total amount between 300 and 600:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc122'),
+  order_id: 1001,
+  customer_id: 1,
+  restaurant_id: 101,
+  items: [
+    {
+      item_name: 'Veg Pizza',
+      quantity: 2,
+      price: 250
+    }
+  ],
+  total_amount: 500,
+  status: 'Delivered'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc123'),
+  order_id: 1002,
+  customer_id: 2,
+  restaurant_id: 102,
+  items: [
+    {
+      item_name: 'Cheese Burst Pizza',
+      quantity: 1,
+      price: 300
+    }
+  ],
+  total_amount: 300,
+  status: 'Pending'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc124'),
+  order_id: 1003,
+  customer_id: 3,
+  restaurant_id: 103,
+  items: [
+    {
+      item_name: 'Veg Burger',
+      quantity: 2,
+      price: 180
+    }
+  ],
+  total_amount: 360,
+  status: 'Delivered'
+}
+
+[Task 51] Display orders placed by customer ID 1:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc122'),
+  order_id: 1001,
+  customer_id: 1,
+  restaurant_id: 101,
+  items: [
+    {
+      item_name: 'Veg Pizza',
+      quantity: 2,
+      price: 250
+    }
+  ],
+  total_amount: 500,
+  status: 'Delivered'
+}
+
+[Task 52] Display orders sorted by amount in descending order:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc122'),
+  order_id: 1001,
+  customer_id: 1,
+  restaurant_id: 101,
+  items: [
+    {
+      item_name: 'Veg Pizza',
+      quantity: 2,
+      price: 250
+    }
+  ],
+  total_amount: 500,
+  status: 'Delivered'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc124'),
+  order_id: 1003,
+  customer_id: 3,
+  restaurant_id: 103,
+  items: [
+    {
+      item_name: 'Veg Burger',
+      quantity: 2,
+      price: 180
+    }
+  ],
+  total_amount: 360,
+  status: 'Delivered'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc123'),
+  order_id: 1002,
+  customer_id: 2,
+  restaurant_id: 102,
+  items: [
+    {
+      item_name: 'Cheese Burst Pizza',
+      quantity: 1,
+      price: 300
+    }
+  ],
+  total_amount: 300,
+  status: 'Pending'
+}
+
+[Task 53] Display the top 3 highest orders:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc122'),
+  order_id: 1001,
+  customer_id: 1,
+  restaurant_id: 101,
+  items: [
+    {
+      item_name: 'Veg Pizza',
+      quantity: 2,
+      price: 250
+    }
+  ],
+  total_amount: 500,
+  status: 'Delivered'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc124'),
+  order_id: 1003,
+  customer_id: 3,
+  restaurant_id: 103,
+  items: [
+    {
+      item_name: 'Veg Burger',
+      quantity: 2,
+      price: 180
+    }
+  ],
+  total_amount: 360,
+  status: 'Delivered'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc123'),
+  order_id: 1002,
+  customer_id: 2,
+  restaurant_id: 102,
+  items: [
+    {
+      item_name: 'Cheese Burst Pizza',
+      quantity: 1,
+      price: 300
+    }
+  ],
+  total_amount: 300,
+  status: 'Pending'
+}
+
+[Task 54] Display orders whose status is not 'Delivered':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc123'),
+  order_id: 1002,
+  customer_id: 2,
+  restaurant_id: 102,
+  items: [
+    {
+      item_name: 'Cheese Burst Pizza',
+      quantity: 1,
+      price: 300
+    }
+  ],
+  total_amount: 300,
+  status: 'Pending'
+}
+
+[Task 55] Display orders having amount greater than 300 and status 'Delivered':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc122'),
+  order_id: 1001,
+  customer_id: 1,
+  restaurant_id: 101,
+  items: [
+    {
+      item_name: 'Veg Pizza',
+      quantity: 2,
+      price: 250
+    }
+  ],
+  total_amount: 500,
+  status: 'Delivered'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc124'),
+  order_id: 1003,
+  customer_id: 3,
+  restaurant_id: 103,
+  items: [
+    {
+      item_name: 'Veg Burger',
+      quantity: 2,
+      price: 180
+    }
+  ],
+  total_amount: 360,
+  status: 'Delivered'
+}
+
+[Task 56] Find total revenue generated:
+{
+  _id: null,
+  total_revenue: 1160
+}
+
+[Task 57] Find average order amount:
+{
+  _id: null,
+  average_amount: 386.6666666666667
+}
+
+[Task 58] Find highest order amount:
+{
+  _id: null,
+  highest_amount: 500
+}
+
+[Task 59] Find lowest order amount:
+{
+  _id: null,
+  lowest_amount: 300
+}
+
+[Task 60] Count orders based on status:
+{
+  _id: 'Pending',
+  order_count: 1
+}
+{
+  _id: 'Delivered',
+  order_count: 2
+}
+
+[Task 61] Display statuses having more than one order:
+{
+  _id: 'Delivered',
+  order_count: 2
+}
+
+[Task 62] Display order statuses sorted by order count (ascending):
+{
+  _id: 'Pending',
+  order_count: 1
+}
+{
+  _id: 'Delivered',
+  order_count: 2
+}
+
+[Task 63] Find the total revenue generated from delivered orders:
+{
+  _id: null,
+  total_delivered_revenue: 860
+}
+
+[Task 64] Find the average amount of delivered orders:
+{
+  _id: null,
+  average_delivered_amount: 430
+}
+
+[Task 65] Find the number of orders placed by each customer:
+{
+  _id: 2,
+  order_count: 1
+}
+{
+  _id: 1,
+  order_count: 1
+}
+{
+  _id: 3,
+  order_count: 1
+}
+
+==================================================
+RUNNING PAYMENTS QUERIES (TASKS 66 - 85)
+==================================================
+
+[Task 66] Display all payments:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc125'),
+  payment_id: 501,
+  order_id: 1001,
+  payment_method: 'UPI',
+  amount: 500,
+  status: 'Success'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc126'),
+  payment_id: 502,
+  order_id: 1002,
+  payment_method: 'Credit Card',
+  amount: 300,
+  status: 'Pending'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc127'),
+  payment_id: 503,
+  order_id: 1003,
+  payment_method: 'Cash',
+  amount: 360,
+  status: 'Success'
+}
+
+[Task 67] Display successful payments:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc125'),
+  payment_id: 501,
+  order_id: 1001,
+  payment_method: 'UPI',
+  amount: 500,
+  status: 'Success'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc127'),
+  payment_id: 503,
+  order_id: 1003,
+  payment_method: 'Cash',
+  amount: 360,
+  status: 'Success'
+}
+
+[Task 68] Display pending payments:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc126'),
+  payment_id: 502,
+  order_id: 1002,
+  payment_method: 'Credit Card',
+  amount: 300,
+  status: 'Pending'
+}
+
+[Task 69] Display payments made through UPI:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc125'),
+  payment_id: 501,
+  order_id: 1001,
+  payment_method: 'UPI',
+  amount: 500,
+  status: 'Success'
+}
+
+[Task 70] Display payments whose amount is greater than 300:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc125'),
+  payment_id: 501,
+  order_id: 1001,
+  payment_method: 'UPI',
+  amount: 500,
+  status: 'Success'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc127'),
+  payment_id: 503,
+  order_id: 1003,
+  payment_method: 'Cash',
+  amount: 360,
+  status: 'Success'
+}
+
+[Task 71] Display payments sorted by amount (ascending):
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc126'),
+  payment_id: 502,
+  order_id: 1002,
+  payment_method: 'Credit Card',
+  amount: 300,
+  status: 'Pending'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc127'),
+  payment_id: 503,
+  order_id: 1003,
+  payment_method: 'Cash',
+  amount: 360,
+  status: 'Success'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc125'),
+  payment_id: 501,
+  order_id: 1001,
+  payment_method: 'UPI',
+  amount: 500,
+  status: 'Success'
+}
+
+[Task 72] Display top 3 payments:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc125'),
+  payment_id: 501,
+  order_id: 1001,
+  payment_method: 'UPI',
+  amount: 500,
+  status: 'Success'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc127'),
+  payment_id: 503,
+  order_id: 1003,
+  payment_method: 'Cash',
+  amount: 360,
+  status: 'Success'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc126'),
+  payment_id: 502,
+  order_id: 1002,
+  payment_method: 'Credit Card',
+  amount: 300,
+  status: 'Pending'
+}
+
+[Task 73] Display payments whose status is not 'Success':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc126'),
+  payment_id: 502,
+  order_id: 1002,
+  payment_method: 'Credit Card',
+  amount: 300,
+  status: 'Pending'
+}
+
+[Task 74] Display payments made using Cash or UPI:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc125'),
+  payment_id: 501,
+  order_id: 1001,
+  payment_method: 'UPI',
+  amount: 500,
+  status: 'Success'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc127'),
+  payment_id: 503,
+  order_id: 1003,
+  payment_method: 'Cash',
+  amount: 360,
+  status: 'Success'
+}
+
+[Task 75] Display payments whose amount lies between 300 and 500:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc125'),
+  payment_id: 501,
+  order_id: 1001,
+  payment_method: 'UPI',
+  amount: 500,
+  status: 'Success'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc126'),
+  payment_id: 502,
+  order_id: 1002,
+  payment_method: 'Credit Card',
+  amount: 300,
+  status: 'Pending'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc127'),
+  payment_id: 503,
+  order_id: 1003,
+  payment_method: 'Cash',
+  amount: 360,
+  status: 'Success'
+}
+
+[Task 76] Find the total amount received:
+{
+  _id: null,
+  total_amount: 1160
+}
+
+[Task 77] Find the average payment amount:
+{
+  _id: null,
+  average_amount: 386.6666666666667
+}
+
+[Task 78] Find the highest payment amount:
+{
+  _id: null,
+  highest_amount: 500
+}
+
+[Task 79] Find the lowest payment amount:
+{
+  _id: null,
+  lowest_amount: 300
+}
+
+[Task 80] Count payments by payment method:
+{
+  _id: 'Credit Card',
+  payment_count: 1
+}
+{
+  _id: 'UPI',
+  payment_count: 1
+}
+{
+  _id: 'Cash',
+  payment_count: 1
+}
+
+[Task 81] Count payments by status:
+{
+  _id: 'Success',
+  payment_count: 2
+}
+{
+  _id: 'Pending',
+  payment_count: 1
+}
+
+[Task 82] Display payment methods having more than one transaction:
+
+[Task 83] Find the total amount received through UPI:
+{
+  _id: null,
+  total_upi_amount: 500
+}
+
+[Task 84] Find the average amount received through Credit Card:
+{
+  _id: null,
+  average_cc_amount: 300
+}
+
+[Task 85] Display payment methods sorted by total transaction amount (descending):
+{
+  _id: 'UPI',
+  total_amount: 500
+}
+{
+  _id: 'Cash',
+  total_amount: 360
+}
+{
+  _id: 'Credit Card',
+  total_amount: 300
+}
+
+==================================================
+RUNNING DELIVERY AGENTS QUERIES (TASKS 86 - 95)
+==================================================
+
+[Task 86] Display all delivery agents:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc128'),
+  agent_id: 1,
+  agent_name: 'Kumar',
+  city: 'Bangalore',
+  rating: 4.8
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc129'),
+  agent_id: 2,
+  agent_name: 'Arjun',
+  city: 'Hyderabad',
+  rating: 4.6
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12a'),
+  agent_id: 3,
+  agent_name: 'Sneha',
+  city: 'Chennai',
+  rating: 4.9
+}
+
+[Task 87] Display delivery agents from Bangalore:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc128'),
+  agent_id: 1,
+  agent_name: 'Kumar',
+  city: 'Bangalore',
+  rating: 4.8
+}
+
+[Task 88] Display agents having rating greater than 4.7:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc128'),
+  agent_id: 1,
+  agent_name: 'Kumar',
+  city: 'Bangalore',
+  rating: 4.8
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12a'),
+  agent_id: 3,
+  agent_name: 'Sneha',
+  city: 'Chennai',
+  rating: 4.9
+}
+
+[Task 89] Display agents whose names start with 'A':
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc129'),
+  agent_id: 2,
+  agent_name: 'Arjun',
+  city: 'Hyderabad',
+  rating: 4.6
+}
+
+[Task 90] Display agents sorted by rating (ascending):
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc129'),
+  agent_id: 2,
+  agent_name: 'Arjun',
+  city: 'Hyderabad',
+  rating: 4.6
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc128'),
+  agent_id: 1,
+  agent_name: 'Kumar',
+  city: 'Bangalore',
+  rating: 4.8
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12a'),
+  agent_id: 3,
+  agent_name: 'Sneha',
+  city: 'Chennai',
+  rating: 4.9
+}
+
+[Task 91] Find the average agent rating:
+{
+  _id: null,
+  average_rating: 4.766666666666667
+}
+
+[Task 92] Find the highest rating:
+{
+  _id: null,
+  highest_rating: 4.9
+}
+
+[Task 93] Find the lowest rating:
+{
+  _id: null,
+  lowest_rating: 4.6
+}
+
+[Task 94] Count agents city-wise:
+{
+  _id: 'Hyderabad',
+  agent_count: 1
+}
+{
+  _id: 'Bangalore',
+  agent_count: 1
+}
+{
+  _id: 'Chennai',
+  agent_count: 1
+}
+
+[Task 95] Display cities having more than one agent:
+
+==================================================
+RUNNING REVIEWS QUERIES (TASKS 96 - 110)
+==================================================
+
+[Task 96] Display all reviews:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12b'),
+  review_id: 1,
+  customer_id: 1,
+  restaurant_id: 101,
+  rating: 5,
+  comment: 'Excellent service'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12c'),
+  review_id: 2,
+  customer_id: 2,
+  restaurant_id: 102,
+  rating: 4,
+  comment: 'Good taste'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12d'),
+  review_id: 3,
+  customer_id: 3,
+  restaurant_id: 103,
+  rating: 5,
+  comment: 'Very tasty'
+}
+
+[Task 97] Display reviews with rating 5:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12b'),
+  review_id: 1,
+  customer_id: 1,
+  restaurant_id: 101,
+  rating: 5,
+  comment: 'Excellent service'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12d'),
+  review_id: 3,
+  customer_id: 3,
+  restaurant_id: 103,
+  rating: 5,
+  comment: 'Very tasty'
+}
+
+[Task 98] Display reviews with rating greater than 4:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12b'),
+  review_id: 1,
+  customer_id: 1,
+  restaurant_id: 101,
+  rating: 5,
+  comment: 'Excellent service'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12d'),
+  review_id: 3,
+  customer_id: 3,
+  restaurant_id: 103,
+  rating: 5,
+  comment: 'Very tasty'
+}
+
+[Task 99] Display reviews given by customer ID 1:
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12b'),
+  review_id: 1,
+  customer_id: 1,
+  restaurant_id: 101,
+  rating: 5,
+  comment: 'Excellent service'
+}
+
+[Task 100] Display reviews sorted by rating (ascending):
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12c'),
+  review_id: 2,
+  customer_id: 2,
+  restaurant_id: 102,
+  rating: 4,
+  comment: 'Good taste'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12b'),
+  review_id: 1,
+  customer_id: 1,
+  restaurant_id: 101,
+  rating: 5,
+  comment: 'Excellent service'
+}
+{
+  _id: ObjectId('6a34ca64af8e74daeeabc12d'),
+  review_id: 3,
+  customer_id: 3,
+  restaurant_id: 103,
+  rating: 5,
+  comment: 'Very tasty'
+}
+
+[Task 101] Find the average review rating:
+{
+  _id: null,
+  average_rating: 4.666666666666667
+}
+
+[Task 102] Find the highest review rating:
+{
+  _id: null,
+  highest_rating: 5
+}
+
+[Task 103] Find the lowest review rating:
+{
+  _id: null,
+  lowest_rating: 4
+}
+
+[Task 104] Count reviews for each restaurant:
+{
+  _id: 103,
+  review_count: 1
+}
+{
+  _id: 101,
+  review_count: 1
+}
+{
+  _id: 102,
+  review_count: 1
+}
+
+[Task 105] Display restaurants having more than one review:
+
+[Task 106] Find the average rating for each restaurant:
+{
+  _id: 102,
+  average_rating: 4
+}
+{
+  _id: 101,
+  average_rating: 5
+}
+{
+  _id: 103,
+  average_rating: 5
+}
+
+[Task 107] Display restaurants sorted by average rating (ascending):
+{
+  _id: 102,
+  average_rating: 4
+}
+{
+  _id: 103,
+  average_rating: 5
+}
+{
+  _id: 101,
+  average_rating: 5
+}
+
+[Task 108] Find the total number of 5-star reviews:
+Total 5-Star Reviews: 2
+
+[Task 109] Count reviews based on rating:
+{
+  _id: 5,
+  review_count: 2
+}
+{
+  _id: 4,
+  review_count: 1
+}
+
+[Task 110] Display ratings having more than one review:
+{
+  _id: 5,
+  review_count: 2
+}
+
+==================================================
+RUNNING ADVANCED AGGREGATION QUERIES (TASKS 111 - 119)
+==================================================
+
+[Task 111] Find the restaurant generating the highest revenue:
+{
+  total_revenue: 500,
+  restaurant_id: 101,
+  restaurant_name: 'Pizza Hut'
+}
+
+[Task 112] Find the customer who placed the maximum number of orders:
+{
+  order_count: 1,
+  customer_id: 2,
+  customer_name: 'Priya'
+}
+
+[Task 113] Find the most popular payment method:
+{
+  transaction_count: 1,
+  payment_method: 'Cash'
+}
+
+[Task 114] Find the city with the maximum customers:
+{
+  customer_count: 2,
+  city: 'Bangalore'
+}
+
+[Task 115] Find the city having the highest number of restaurants:
+{
+  restaurant_count: 1,
+  city: 'Hyderabad'
+}
+
+[Task 116] Find the top 3 restaurants based on average ratings (calculated from reviews):
+{
+  average_rating: 5,
+  restaurant_id: 103,
+  restaurant_name: 'Burger King'
+}
+{
+  average_rating: 5,
+  restaurant_id: 101,
+  restaurant_name: 'Pizza Hut'
+}
+{
+  average_rating: 4,
+  restaurant_id: 102,
+  restaurant_name: 'Dominos'
+}
+
+[Task 117] Find the top 5 customers based on order count:
+{
+  order_count: 1,
+  customer_id: 3,
+  customer_name: 'Rahul'
+}
+{
+  order_count: 1,
+  customer_id: 1,
+  customer_name: 'Saran'
+}
+{
+  order_count: 1,
+  customer_id: 2,
+  customer_name: 'Priya'
+}
+
+[Task 118] Find the percentage of delivered orders:
+{
+  total_orders: 3,
+  delivered_orders: 2,
+  delivered_percentage: 66.66666666666666
+}
+
+[Task 119] Find the average order amount city-wise:
+{
+  average_order_amount: 300,
+  city: 'Hyderabad'
+}
+{
+  average_order_amount: 500,
+  city: 'Bangalore'
+}
+{
+  average_order_amount: 360,
+  city: 'Chennai'
+}
+
+==================================================
+ALL 120 PROJECT TASKS COMPLETED SUCCESSFULLY!
+==================================================
