@@ -97,18 +97,27 @@ Stores customer ratings and feedback for restaurants.
 
 ## How to Execute the Project
 
-1. Start your local MongoDB server (typically runs on `localhost:27017`).
-2. Make sure the Mongo Shell (`mongosh`) is installed and available in your environment path.
-3. Open your terminal in the project root directory (`food-delivery-project/`).
-4. Run the orchestrator script:
+### Option A: Interactive Web Dashboard (Recommended)
+1. Start your local MongoDB server (running on `localhost:27017`).
+2. Open your terminal in the project directory (`Major_project/`) and run:
+   ```bash
+   npm install
+   npm start
+   ```
+3. Open your web browser and navigate to the localhost web page:
+   [http://localhost:3000](http://localhost:3000)
+4. Click the **"Seed Database"** button to load sample data, then navigate the sidebar tasks to execute and view MongoDB queries interactively.
+
+### Option B: Mongo Shell CLI Execution
+1. Start your local MongoDB server.
+2. Run the orchestrator script using `mongosh`:
    ```bash
    mongosh mongodb_project.js
    ```
 This script will automatically:
 * Switch to the database `food_delivery_db`.
-* Drop any existing collections to ensure a clean state.
 * Seed the collections using data from `sample_data.js`.
-* Execute all 120 tasks sequentially, formatting and printing results in the terminal.
+* Execute all tasks sequentially and print results directly in the terminal.
 
 ---
 
